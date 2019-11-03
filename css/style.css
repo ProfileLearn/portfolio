@@ -17,23 +17,22 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 940px) {
   html {
     font-size: 60%;
   }
 }
 
-@media (max-width: 61.25em) {
+@media (max-width: 720px) {
   html {
     font-size: 58%;
   }
 }
 
-@media (max-width: 28.75em) {
+@media (max-width: 460px) {
   html  {
     font-size: 55%;
   }
