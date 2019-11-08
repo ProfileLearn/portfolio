@@ -302,3 +302,6 @@ footer > p {
     text-align: center;
   }  
 }
+.project-image {
+  border-radius: 4px;
+}
