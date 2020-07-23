@@ -1,6 +1,6 @@
 
 const URLA = `https://profilelearn.github.io/`;
-const URLI = [`https://github.com/ProfileLearn/portfolio/blob/master/images/`, `${".png"||".jpg"}?raw=true`];
+const URLI = [`https://github.com/ProfileLearn/portfolio/blob/master/images/`, `.png?raw=true`];
 
 
 class Datos {
