@@ -239,10 +239,10 @@ img {
 }
 
 .project-image {
-  height: calc(100% - 6.8rem);
+  height: calc(100% - 9rem);
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /*-o-object-fit: cover;
+     object-fit: cover;*/
 }
 
 .project-title {
