@@ -6,17 +6,10 @@ const URLI = [`https://github.com/ProfileLearn/portfolio/blob/master/images/`, `
 class Datos {
 	constructor(hrefA, titulo) {
 		this.hrefA = URLA + hrefA;
-		this.srcImg = URLI[0] + hrefA + URLI[1];
+		this.srcImg = URLI[0] + hrefA + `${".gif" || ".png"}` + URLI[1];
 		this.titulo = titulo;
 	}
 }
-
-
-/*<picture>
-  <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
-  <source media="(min-width:465px)" srcset="img_white_flower.jpg">
-  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
-</picture>*/
 
 
 function render(obj) {
@@ -27,8 +20,8 @@ function render(obj) {
 	a.href = obj.hrefA;
 	a.innerHTML = `
 	<picture>
-		<source srcset= ${obj.srcImg + ".gif"}>
-		<img src = ${obj.srcImg + ".png"} alt="project" class="project-image">
+		<source srcset= ${obj.srcImg}>
+		<img src = ${obj.srcImg} alt="project" class="project-image">
 	</picture>
   	<p class="project-title"><em>${obj.titulo}</em></p>`
 
