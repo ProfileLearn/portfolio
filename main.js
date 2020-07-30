@@ -1,12 +1,12 @@
 
 const URLA = `https://profilelearn.github.io/`;
-const URLI = [`https://github.com/ProfileLearn/portfolio/blob/master/images/`, `?raw=true`];
+const URLI = [`https://github.com/ProfileLearn/portfolio/blob/master/images/`, `${".gif" || ".png"}?raw=true`];
 
 
 class Datos {
 	constructor(hrefA, titulo) {
 		this.hrefA = URLA + hrefA;
-		this.srcImg = URLI[0] + hrefA + `${".gif" || ".png"}` + URLI[1];
+		this.srcImg = URLI[0] + hrefA + URLI[1];
 		this.titulo = titulo;
 	}
 }
@@ -18,11 +18,7 @@ function render(obj) {
 	a.target="_blank";
 	a.rel="noopener noreferrer";
 	a.href = obj.hrefA;
-	a.innerHTML = `
-	<picture>
-		<source srcset= ${obj.srcImg}>
-		<img src = ${obj.srcImg} alt="project" class="project-image">
-	</picture>
+	a.innerHTML = `<img src = ${obj.srcImg} alt="project" class="project-image">
   	<p class="project-title"><em>${obj.titulo}</em></p>`
 
 	document.querySelector(".projects-grid").appendChild(a);

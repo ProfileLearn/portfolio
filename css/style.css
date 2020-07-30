@@ -190,7 +190,7 @@ img {
 
 .projects-section {
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 8rem 2rem;
   background: var(--main-blue);
 }
 
@@ -203,7 +203,13 @@ img {
 @media (max-width: 28.75em) {
   .projects-section-header {
     font-size: 4rem;
-  }  
+  }
+  .projects-section-header {
+    margin: 0;
+  }
+  .projects-section {
+    padding: 0;
+  }
 }
 
 .projects-grid {
@@ -216,7 +222,6 @@ img {
   margin: 0 auto;
   margin-bottom: 2rem;
 }
-
 
 
 @media (max-width: 30.625rem) {
@@ -239,10 +244,9 @@ img {
 }
 
 .project-image {
-  height: calc(100% - 9rem);
+  height: 100%;
+  max-height: 500px;
   width: 100%;
-  /*-o-object-fit: cover;
-     object-fit: cover;*/
 }
 
 .project-title {
