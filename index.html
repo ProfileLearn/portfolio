@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="es" >
 <head>
   <meta charset="UTF-8">
@@ -18,24 +18,29 @@
   href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
   rel="stylesheet"
   />
-  <link href="css/style.css" rel="stylesheet"/>
+  <link href="css/style4.css" rel="stylesheet"/>
+  <link href="css/responsive.css" rel="stylesheet"/>
 </head>
 <body>
 
   <main>
     <header>
-      <nav id="navbar" class="nav">
-        <ul class="nav-list">
+      <nav class="nav">   
+        <div class="flex justify-content-between align-items-center">
+          <p class="ml-1">Menu Principal</p>
+          <button class="mr-1"><i class="fas fa-bars"></i></button>
+        </div>
+        <ul class="nav-list text-center hidden">
           <li><a href="#welcome-section">Sobre Mí</a></li>
           <li><a href="#projects">Proyectos</a></li>
           <li><a href="#contact">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <section id="welcome-section" class="welcome-section">
+    <section id="welcome-section" class="welcome-section text-center flex column justify-content-center">
       <h1>Hernan Porfirio</h1>
-      <h2 id="desarrollador">Desarrollador Web</h2 id="desarrollador">
-      <h3>Tecnologias</h3>
+      <h2 id="desarrollador">Desarrollador Web</h2>
+      <h3 class="mt-1">Tecnologias</h3>
       <ul id="ul-tecnologias">
         <li><code>HTML5</code></li>
         <li><code>CSS3</code></li>
@@ -51,11 +56,11 @@
 
       </div>
     </section>
-    <section id="contact" class="contact-section">
-      <div class="contact-section-header">
+    <section id="contact" class="contact-section flex column justify-content-center align-items-center">
+      <div class="contact-section-header text-center">
         <h2>Como contactarme</h2>
       </div>
-      <div class="contact-links">
+      <div class="contact-links flex justify-content-center">
         <a href="https://github.com/ProfileLearn" id="profile-link" target="_blank" class="btn contact-details" rel="noopener noreferrer">
           <i class="fab fa-github">GitHub</i></a>
           <a href="https://api.whatsapp.com/send?phone=541136260524" target="_blank" class="btn contact-details" rel="noopener noreferrer"><i class="fab fa-whatsapp">Whatsapp</i></a>

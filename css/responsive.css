@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+	.projects-grid {
+	  	display: grid;
+	  	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	  	grid-gap: 0;
+	  	padding: 2rem;
+	}
+	.project-image {
+		border-radius: 4px;
+		height: 26vh;
+		width: 38vw;
+	}
+	.projects-section-header {
+	  margin: .5em auto .3rem;
+	}
+}
+
+/*SEGUIR DEPURANDO Y AJUSTANDO LOS TAMAÑOS GRANDES*/
+/*En algunas resoluciones de tablet queda mucho espacio
+entre los proyectos y la seccion de contacto*/
+
+@media (min-width: 1024px) {
+	.projects-grid {
+	  	grid-gap: 2rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.projects-grid {
+	  	grid-gap: 1rem;
+	}
+	.project-image {
+	  border-radius: 4px;
+	  height: 58vh;
+	  max-width: 95%;
+	}
+}
