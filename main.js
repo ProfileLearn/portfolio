@@ -11,10 +11,28 @@ class Datos {
 	}
 }
 
+function responsive(){
+const menu = document.querySelector("header > nav > div");
+const ul = document.querySelector("header > nav > ul");
+const navList = document.querySelector(".nav-list");
+
+function hidden() {
+	if (window.matchMedia("(max-width: 1199px)").matches) {
+		document.querySelector(".nav-list").classList.toggle("hidden");
+		document.querySelector("h1").classList.toggle("mt-5");
+	}
+}
+const addHidden = () => navList.classList.add("hidden");
+addHidden();
+window.addEventListener("resize", addHidden);
+menu.addEventListener("click", hidden)
+ul.addEventListener("click", hidden)
+};
+
 
 function render(obj) {
 	const a = document.createElement("a");
-	a.className = "project-tile project";
+	a.className = "project-tile";
 	a.target="_blank";
 	a.rel="noopener noreferrer";
 	a.href = obj.hrefA;
@@ -23,16 +41,14 @@ function render(obj) {
 
 	document.querySelector(".projects-grid").appendChild(a);
 }
+ 
+responsive();
 
 const app = [];
 
 app[0] = new Datos("app_enfoque", "Juego Mental");
 app[1] = new Datos("interescompuestobs4", "Calculador de Intereses");
-// app[2] = new Datos("calculator", "Calculadora");
 app[3] = new Datos("technical-documentation-page", "Página de documentacion Técnica");
-// app[4] = new Datos("product-landing-page", "Landing Page");
-// app[5] = new Datos("survey-form", "Survey Form");
-// app[6] = new Datos("biografia", "Biografía");
 
 app.forEach(e=>{
 	render(e);
