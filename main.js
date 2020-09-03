@@ -15,14 +15,18 @@ function responsive(){
 const menu = document.querySelector("header > nav > div");
 const ul = document.querySelector("header > nav > ul");
 const navList = document.querySelector(".nav-list");
+const h1 = document.querySelector("h1");
 
 function hidden() {
 	if (window.matchMedia("(max-width: 1199px)").matches) {
-		document.querySelector(".nav-list").classList.toggle("hidden");
-		document.querySelector("h1").classList.toggle("mt-5");
+		navList.classList.toggle("hidden");
+		h1.classList.toggle("mt-5");
 	}
 }
-const addHidden = () => navList.classList.add("hidden");
+const addHidden = () => {
+	navList.classList.add("hidden");
+	h1.classList.remove("mt-5");
+};
 addHidden();
 window.addEventListener("resize", addHidden);
 menu.addEventListener("click", hidden)
