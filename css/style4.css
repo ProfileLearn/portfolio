@@ -53,9 +53,12 @@ a {
 }
 
 header > nav > div > button {
+  background-color: var(--main-red);
+  border-radius: 15px;
+  box-shadow: 0 0 5px var(--main-gray) inset;
+  outline: currentColor;
   height: 4em;
   width: 5em;
-  border-radius: 8px;
 }
 
 .flex {
@@ -100,6 +103,7 @@ header > nav > div > button {
   padding-bottom: 17vh;
 }
 
+
 .nav {
   position: fixed;
   width: 100%;
@@ -143,6 +147,10 @@ header > nav > div > button {
   padding: 1rem 2rem;
   border-radius: 2px;
 }
+.move:hover {
+  transform: translateX(.2em);
+}
+
 .projects-section {
   text-align: center;
   background: var(--main-gray);
