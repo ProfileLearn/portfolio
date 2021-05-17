@@ -50,7 +50,7 @@ responsive();
 
 const app = [];
 
-app[0] = new Datos("app_enfoque", "Juego Mental");|
+app[0] = new Datos("app_enfoque", "Juego Mental");
 app[1] = new Datos("interescompuestobs4", "Calculador de Intereses");
 app[2] = new Datos("portrait-3", "Slider");
 
